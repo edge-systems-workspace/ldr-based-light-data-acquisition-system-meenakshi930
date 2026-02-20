@@ -22,5 +22,7 @@ void setup() {
 
 void loop() {
     ldrValue = analogRead(ldrPin);
+    Serial.print("LDR Raw Value: ");
+    Serial.println(ldrValue);
 
 }
