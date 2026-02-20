@@ -1,6 +1,6 @@
 #include <Arduino.h>
 /**
- * @file main.ino
+ * @file main.cpp
  * @brief Embedded Light Intensity Monitoring using LDR
  * @author YOUR_NAME
  * @date YYYY-MM-DD
@@ -10,11 +10,13 @@
  * and displays structured output via Serial Monitor.
  */
 
- // TODO 1:
- // Define LDR analog pin (Use A0)
+// TODO 1:
+// Define LDR analog pin (Use A0)
+int ldrPin = A0;
 
- // TODO 2:
- // Create variable to store sensor reading
+// TODO 2:
+// Create variable to store sensor reading
+int ldrValue = 0;
 
 void setup() {
 
