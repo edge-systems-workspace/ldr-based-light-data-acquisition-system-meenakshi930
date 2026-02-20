@@ -15,12 +15,9 @@ int ldrPin = A0;
 int ldrValue = 0;
 
 void setup() {
+    Serial.begin(9600);
+    Serial.println("LDR Light Intensity Monitoring Initialized");
 
-    // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
-
-    // TODO 4:
-    // Print system initialization message
 }
 
 void loop() {
