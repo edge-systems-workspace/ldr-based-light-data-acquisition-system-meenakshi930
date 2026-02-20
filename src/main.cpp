@@ -24,5 +24,12 @@ void loop() {
     ldrValue = analogRead(ldrPin);
     Serial.print("LDR Raw Value: ");
     Serial.println(ldrValue);
+    if (ldrValue > 500) {
+        Serial.println("Brightness Status: Bright");
+    } else {
+        Serial.println("Brightness Status: Dark");
+    }
+
+    delay(500);
 
 }
